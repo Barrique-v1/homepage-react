@@ -11,15 +11,13 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <AppBar position="static">
+        <AppBar position="fixed">
             <Toolbar>
                 <Typography variant="h6" style={{ flexGrow: 1 }}>
-                    My Portfolio
+                    Norman Peters
                 </Typography>
                 <Button color="inherit" onClick={() => scrollToSection('home')}>Home</Button>
-                <Button color="inherit" onClick={() => scrollToSection('about')}>About</Button>
                 <Button color="inherit" onClick={() => scrollToSection('projects')}>Projects</Button>
-                <Button color="inherit" onClick={() => scrollToSection('contact')}>Contact</Button>
             </Toolbar>
         </AppBar>
     );
