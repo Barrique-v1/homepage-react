@@ -3,7 +3,6 @@ import {
     Grid,
     Typography,
     Card,
-    CardActions,
     CardContent,
     Button,
     IconButton,
@@ -11,36 +10,34 @@ import {
     Tooltip,
     CardActionArea
 } from '@mui/material';
-import './Projects.css';
 import TravelFund from '../../assets/images/Travelfund_Logo.png';
-import {ReactComponent as JavaIcon} from '../../assets/icons/java.svg';
-import {SiTypescript, SiVuedotjs, SiSpringboot, SiPostgresql} from 'react-icons/si';
+import { ReactComponent as JavaIcon } from '../../assets/icons/java.svg';
+import { SiTypescript, SiVuedotjs, SiSpringboot, SiPostgresql } from 'react-icons/si';
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Projects: React.FC = () => {
     return (
         <div style={{
-            height: '100vh',
+            minHeight: '100vh',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            padding: '20px'
         }}>
             <Grid container spacing={3}>
 
                 {/* First Project Card */}
-                <Grid item xs={6}>
-                    <Card sx={{boxShadow: 3}} style={{height: '100%'}}>
-                        <Tooltip title="Take a look!">
-                            <CardActionArea component="a" href="https://travel-fund.onrender.com" target="_blank">
-                                <CardMedia
-                                    component="img"
-                                    alt="TravelFund"
-                                    height="250"
-                                    image={TravelFund}
-                                />
-                            </CardActionArea>
-                        </Tooltip>
+                <Grid item xs={12} md={6}>
+                    <Card sx={{ boxShadow: 3 }} style={{ maxWidth: '550px', height: '100%' }}>
+                        <CardActionArea component="a" href="https://travel-fund.onrender.com" target="_blank">
+                            <CardMedia
+                                component="img"
+                                alt="TravelFund"
+                                height="250"
+                                image={TravelFund}
+                            />
+                        </CardActionArea>
 
                         <CardContent>
                             <Typography variant="body1">
@@ -50,7 +47,6 @@ const Projects: React.FC = () => {
                                 <Button size="small" component="a" href="https://travel-fund.onrender.com" target="_blank">Take a look.</Button>
                             </Typography>
                         </CardContent>
-
 
                         <Typography variant="overline" justifyContent="center" alignItems="center"
                                     textAlign="center" fontWeight={"bold"}>
@@ -75,44 +71,37 @@ const Projects: React.FC = () => {
                             </Grid>
                         </Typography>
 
-
-                        <div style={{display: 'flex', marginTop: '10px', marginBottom: '10px'}}>
+                        <div style={{ display: 'flex', marginTop: '10px', marginBottom: '10px' }}>
                             <Grid container spacing={2} justifyContent="center" alignItems="center"
                                   textAlign="center">
                                 <Grid item xs={4}>
-                                    {/* TypeScript Icon */}
                                     <Tooltip title="TypeScript">
                                         <IconButton aria-label="TypeScript">
-                                            <SiTypescript fontSize="48px" style={{color: '#3178C6'}}/>
+                                            <SiTypescript fontSize="48px" style={{ color: '#3178C6' }} />
                                         </IconButton>
                                     </Tooltip>
-                                    {/* Vue.js Icon */}
                                     <Tooltip title="Vue.js">
                                         <IconButton aria-label="Vue.js">
-                                            <SiVuedotjs fontSize="48px" style={{color: '#42b883'}}/>
+                                            <SiVuedotjs fontSize="48px" style={{ color: '#42b883' }} />
                                         </IconButton>
                                     </Tooltip>
                                 </Grid>
                                 <Grid item xs={4}>
-                                    {/* Java Icon */}
                                     <Tooltip title="Java">
                                         <IconButton aria-label="Java">
-                                            <JavaIcon width={48} height={48}/>
+                                            <JavaIcon width={48} height={48} />
                                         </IconButton>
                                     </Tooltip>
-                                    {/* Spring Boot Icon */}
                                     <Tooltip title="Spring Boot">
                                         <IconButton aria-label="Spring Boot">
-                                            <SiSpringboot fontSize="48px" style={{color: '#6DB33F'}}/>
+                                            <SiSpringboot fontSize="48px" style={{ color: '#6DB33F' }} />
                                         </IconButton>
                                     </Tooltip>
                                 </Grid>
                                 <Grid item xs={4}>
-
-                                    {/* PostgreSQL Icon */}
                                     <Tooltip title="PostgreSQL">
                                         <IconButton aria-label="PostgreSQL">
-                                            <SiPostgresql fontSize="48px" style={{color: '#336791'}}/>
+                                            <SiPostgresql fontSize="48px" style={{ color: '#336791' }} />
                                         </IconButton>
                                     </Tooltip>
                                 </Grid>
@@ -122,8 +111,8 @@ const Projects: React.FC = () => {
                 </Grid>
 
                 {/* Second Project Card (Placeholder) */}
-                <Grid item xs={6}>
-                    <Card sx={{boxShadow: 3}} style={{height: '100%', backgroundColor: '#f5f5f5'}}>
+                <Grid item xs={12} md={6}>
+                    <Card sx={{ boxShadow: 3 }} style={{ maxWidth: '550px', height: '100%', backgroundColor: '#f5f5f5' }}>
                         <CardActionArea>
                             <CardMedia
                                 component="img"
@@ -134,8 +123,7 @@ const Projects: React.FC = () => {
                         </CardActionArea>
 
                         <CardContent>
-                            <Typography variant="body1"
-                                        style={{marginBottom: '25px', lineHeight: '1.6', color: '#555'}}>
+                            <Typography variant="body1">
                                 A new project is under development. Stay tuned for updates!
                             </Typography>
                         </CardContent>
@@ -157,28 +145,27 @@ const Projects: React.FC = () => {
                             </Grid>
                         </Typography>
 
-                        <div style={{display: 'flex', marginTop: '10px', marginBottom: '10px'}}>
+                        <div style={{ display: 'flex', marginTop: '10px', marginBottom: '10px' }}>
                             <Grid container spacing={2} justifyContent="center" alignItems="center"
                                   textAlign="center">
                                 <Grid item xs={4}>
-                                    {/* Placeholder Icons */}
                                     <Tooltip title="Technology 1">
                                         <IconButton aria-label="Technology 1">
-                                            <SiTypescript fontSize="48px" style={{color: '#cccccc'}}/>
+                                            <SiTypescript fontSize="48px" style={{ color: '#cccccc' }} />
                                         </IconButton>
                                     </Tooltip>
                                 </Grid>
                                 <Grid item xs={4}>
                                     <Tooltip title="Technology 2">
                                         <IconButton aria-label="Technology 2">
-                                            <SiTypescript fontSize="48px" style={{color: '#cccccc'}}/>
+                                            <SiTypescript fontSize="48px" style={{ color: '#cccccc' }} />
                                         </IconButton>
                                     </Tooltip>
                                 </Grid>
                                 <Grid item xs={4}>
                                     <Tooltip title="Technology 3">
                                         <IconButton aria-label="Technology 3">
-                                            <SiTypescript fontSize="48px" style={{color: '#cccccc'}}/>
+                                            <SiTypescript fontSize="48px" style={{ color: '#cccccc' }} />
                                         </IconButton>
                                     </Tooltip>
                                 </Grid>
