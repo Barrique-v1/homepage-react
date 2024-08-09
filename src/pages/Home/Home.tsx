@@ -14,7 +14,7 @@ const Home: React.FC = () => {
                          style={{borderRadius: '50%', width: '500px', height: '500px'}}/>
                 </Grid>
                 <Grid item xs={6} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                    <Typography variant="h4" style={{ marginTop: '20px' }}>
+                    <Typography variant="h6" fontWeight={"bold"} style={{ marginTop: '20px' }}>
                         Hello, I'm Norman Peters,
                     </Typography>
                     <Typography variant="body1" style={{ marginTop: '20px' }}>
