@@ -10,7 +10,7 @@ const App: React.FC = () => {
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <Navbar />
-            <Container>
+            <Container style={{ marginTop: '64px' }}>
                 <section id="home">
                     <Home />
                 </section>

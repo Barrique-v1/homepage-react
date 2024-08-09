@@ -1,14 +1,19 @@
 import React from 'react';
+import Profilfoto from './assets/Profilfoto.jpg';
 import { Typography } from '@mui/material';
 
 const Home: React.FC = () => {
     return (
-        <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-            <Typography variant="h2" component="h1" gutterBottom>
-                Welcome to My Portfolio
-            </Typography>
-            <Typography variant="body1">
-                This is the home page.
+        <div style={{
+            height: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}>
+            <img src={Profilfoto} alt="Profilfoto" style={{borderRadius: '50%', width: '150px', height: '150px'}}/>
+            <Typography variant="h4" style={{marginTop: '20px'}}>
+                Willkommen auf meiner Homepage!
             </Typography>
         </div>
     );
