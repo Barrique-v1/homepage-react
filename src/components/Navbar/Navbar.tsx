@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, Button, Switch, Box } from '@mui/material';
+import React, { useState, useEffect } from 'react';
+import { AppBar, Toolbar, Button, Switch, Box } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import Flag from 'react-world-flags';
 import './Navbar.css';
 
+
+
+
 const LanguageSwitcher: React.FC = () => {
     const { i18n } = useTranslation();
-    const [language, setLanguage] = useState(i18n.language === 'de');
+    const [language, setLanguage] = useState(i18n.language === 'en');
+
+    useEffect(() => {
+        setLanguage(i18n.language === 'en');
+    }, [i18n.language]);
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const isEnglish = event.target.checked;
@@ -29,6 +36,8 @@ const LanguageSwitcher: React.FC = () => {
 };
 
 const Navbar: React.FC = () => {
+    const { t } = useTranslation();
+
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
         if (element) {
@@ -39,12 +48,12 @@ const Navbar: React.FC = () => {
     return (
         <AppBar position="fixed">
             <Toolbar>
-                <Typography variant="h6" style={{ flexGrow: 1 }}>
-                </Typography>
-                <Button color="inherit" onClick={() => scrollToSection('home')}>Home</Button>
-                <Button color="inherit" onClick={() => scrollToSection('about')}>About</Button>
-                <Button color="inherit" onClick={() => scrollToSection('projects')} sx={{marginRight: 3}}>Projects</Button>
-                <LanguageSwitcher />
+                <Box sx={{ flexGrow: 1 }}>
+                    <LanguageSwitcher />
+                </Box>
+                <Button color="inherit" onClick={() => scrollToSection('home')}>{t('nav.home')}</Button>
+                <Button color="inherit" onClick={() => scrollToSection('about')}>{t('nav.about')}</Button>
+                <Button color="inherit" onClick={() => scrollToSection('projects')}>{t('nav.projects')}</Button>
             </Toolbar>
         </AppBar>
     );

@@ -1,10 +1,17 @@
 {
+  "nav": {
+    "home": "Start",
+    "about": "Über mich",
+    "projects": "Projekte"
+  },
   "home": {
     "greeting": "Hallo, ich bin",
     "name": "Norman Peters",
     "description": "ich studiere Wirtschaftsinformatik an der Hochschule für Technik und Wirtschaft in Berlin und bin angehender Softwareentwickler. Hier präsentiere ich einige meiner Projekte — viel Spaß beim Entdecken!"
   },
   "about": {
+    "subtitle": "Erfahre Mehr",
+    "title": "Über Mich",
     "paragraphs": [
       "Hallo, mein Name ist Norman Peters, und ich bin Wirtschaftsinformatik-Student aus Berlin mit einer Leidenschaft für Softwareentwicklung.",
       "Ich studiere an der Hochschule für Technik und Wirtschaft, wo ich kürzlich mein drittes Semester abgeschlossen habe. Im kommenden Oktober werde ich mein viertes Semester beginnen. Während meines Studiums habe ich mir ein solides Fundament an Wissen in der Softwareentwicklung aufgebaut. Besonders schätze ich an meinem Studiengang die Kombination aus betriebswirtschaftlichem Know-how und technischen Fähigkeiten, die es mir ermöglicht, umfassende und praxisorientierte Lösungen zu entwickeln.",
@@ -13,7 +20,8 @@
     ]
   },
   "projects": {
-    "trafelfund": "Travel Fund ist eine Web-App zur Verfolgung von Ausgaben während einer Reise. Die Ausgaben werden mithilfe einer API in deine Heimatwährung umgerechnet, was es dir erleichtert, deine Finanzen im Ausland zu verwalten."
+    "trafelfund": "Travel Fund ist eine Web-App zur Verfolgung von Ausgaben während einer Reise. Die Ausgaben werden mithilfe einer API in deine Heimatwährung umgerechnet, was es dir erleichtert, deine Finanzen im Ausland zu verwalten.",
+    "button": "Schau es dir an!"
   }
 }
 

@@ -22,6 +22,7 @@ type ProjectCardProps = {
     title: string;
     description: string;
     image: string;
+    button_text: string;
     link: string;
     frontend_technologies: Technology[];
     backend_technologies: Technology[];
@@ -39,6 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                                                      title,
                                                      description,
                                                      image,
+                                                     button_text,
                                                      link,
                                                      frontend_technologies,
                                                      backend_technologies,
@@ -55,7 +57,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {/* Project Description */}
             <Typography variant="body1" gutterBottom justifyContent="center" alignItems="center" textAlign="center">
                 {description}
-                <Button size="small" component="a" href={link} target="_blank">Take a look.</Button>
+                <Button size="small" component="a" href={link} target="_blank">{button_text}</Button>
             </Typography>
 
             {/* Technologie Titles */}

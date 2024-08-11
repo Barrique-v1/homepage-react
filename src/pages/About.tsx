@@ -15,10 +15,10 @@ const About: React.FC = () => {
             alignItems: 'center',
         }}>
             <Typography variant="caption">
-                Get To Know More
+                {t('about.subtitle')}
             </Typography>
             <Typography variant="h3" fontWeight={"bold"} marginBottom={5}>
-                About Me
+                {t('about.title')}
             </Typography>
 
             <Typography variant="body1" textAlign="center">

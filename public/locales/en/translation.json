@@ -1,10 +1,17 @@
 {
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects"
+  },
   "home": {
     "greeting": "Hello, I am",
     "name": "Norman Peters",
     "description": "a Business Informatics student at the University of Applied Sciences in Berlin and an aspiring software developer. I'm excited to share some of my projects with you — please feel free to explore them!"
   },
   "about": {
+    "subtitle": "Get To Know More",
+    "title": "About Me",
     "paragraphs": [
       "Hello, my name is Norman Peters, and I am a Business Informatics student from Berlin with a passion for software development.",
       "I am studying at the University of Applied Sciences, where I recently completed my third semester. This coming October, I will begin my fourth semester. Throughout my studies, I have built a solid foundation of knowledge in software development. What I particularly appreciate about my program is the combination of business acumen and technical skills, which enables me to develop comprehensive and practical solutions.",
@@ -13,7 +20,8 @@
     ]
   },
   "projects": {
-    "trafelfund":"Travel Fund is a web app for tracking expenses during a trip. The expenses are converted into your home currency using an API, making it easier to manage your finances abroad."
+    "trafelfund":"Travel Fund is a web app for tracking expenses during a trip. The expenses are converted into your home currency using an API, making it easier to manage your finances abroad.",
+    "button": "Check It Out!"
   }
 }
 

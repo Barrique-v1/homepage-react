@@ -30,6 +30,7 @@ const Projects: React.FC = () => {
                         title="Travel Fund"
                         image={TravelFundImage}
                         description= {t('projects.trafelfund')}
+                        button_text={t('projects.button')}
                         link="https://travel-fund.onrender.com"
                         frontend_technologies={[
                             { name: 'TypeScript', icon: <SiTypescript fontSize="48px" style={{ color: '#3178C6' }} /> },
@@ -54,6 +55,7 @@ const Projects: React.FC = () => {
                         title="New Project"
                         description="A new project is under development. Stay tuned for updates!"
                         image="https://via.placeholder.com/500x250.png?text=Project+Coming+Soon"
+                        button_text={t('projects.button')}
                         link="#"
                         frontend_technologies={[
                             { name: 'Technology', icon: <SiTypescript fontSize="48px" style={{ color: '#cccccc' }} /> },
