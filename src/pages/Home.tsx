@@ -1,9 +1,10 @@
 import React from 'react';
-import Profilfoto from '../../assets/images/Profilfoto.jpg';
+import Profilfoto from '../assets/images/Profilfoto.jpg';
 import { Grid, Typography, IconButton, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import {useTranslation} from "react-i18next";
 
 const ProfileImage = styled('img')(({ theme }) => ({
     borderRadius: '50%',
@@ -13,13 +14,14 @@ const ProfileImage = styled('img')(({ theme }) => ({
 }));
 
 const IconContainer = styled(Box)(({ theme }) => ({
-    marginTop: theme.spacing(3),
     display: 'flex',
     justifyContent: 'center',
     gap: theme.spacing(1),
 }));
 
 const Home: React.FC = () => {
+    const { t } = useTranslation();
+
     return (
         <Box
             sx={{
@@ -43,14 +45,13 @@ const Home: React.FC = () => {
                         textAlign: 'center',
                     }}>
                     <Typography variant="body1">
-                        Hello, I am <br />
+                        {t('home.greeting')} <br />
                     </Typography>
                     <Typography variant="h3" fontWeight="bold" component="span" mb={2}>
-                        Norman Peters<br />
+                        {t('home.name')}<br />
                     </Typography>
                     <Typography variant="body1">
-                        a Business Informatics student at the University of Applied Sciences in Berlin and an aspiring software developer.
-                        I'm excited to share some of my projects with you — please feel free to explore them!
+                        {t('home.description')}<br/>
                     </Typography>
 
                     <IconContainer>

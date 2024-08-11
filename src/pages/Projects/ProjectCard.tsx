@@ -53,14 +53,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
         <CardContent>
             {/* Project Description */}
-            <Typography variant="body1" gutterBottom>
+            <Typography variant="body1" gutterBottom justifyContent="center" alignItems="center" textAlign="center">
                 {description}
                 <Button size="small" component="a" href={link} target="_blank">Take a look.</Button>
             </Typography>
 
             {/* Technologie Titles */}
-            <Grid container spacing={2} justifyContent="center" alignItems="center" textAlign="center"
-                  sx={{marginTop: 1}}>
+            <Grid container spacing={2} justifyContent="center" alignItems="center" textAlign="center">
                 <Grid item xs={4}>
                     <Typography variant="overline">Frontend</Typography>
                     <IconButton href={repoLinks.frontend} target="_blank" aria-label="GitHub Frontend Repo">

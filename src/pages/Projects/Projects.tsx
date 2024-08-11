@@ -4,23 +4,24 @@ import ProjectCard from './ProjectCard';
 import TravelFundImage from '../../assets/images/Travelfund_Logo.png';
 import { SiTypescript, SiVuedotjs, SiSpringboot, SiPostgresql } from 'react-icons/si';
 import { ReactComponent as JavaIcon } from '../../assets/icons/java.svg';
+import {useTranslation} from "react-i18next";
 
 const Projects: React.FC = () => {
+    const { t } = useTranslation();
     return (
         <Box
             sx={{
                 minHeight: '100vh',
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'start',
+                justifyContent: 'center',
                 alignItems: 'center',
-                padding: 3,
             }}
         >
-            <Typography variant="caption" sx={{ marginTop: 2 }}>
+            <Typography variant="caption">
                 Browse My Latest
             </Typography>
-            <Typography variant="h3" fontWeight="bold" sx={{ marginBottom: 5 }}>
+            <Typography variant="h3" fontWeight="bold" marginBottom={5}>
                 Projects
             </Typography>
             <Grid container spacing={3}>
@@ -28,7 +29,7 @@ const Projects: React.FC = () => {
                     <ProjectCard
                         title="Travel Fund"
                         image={TravelFundImage}
-                        description="Travel Fund is a web app for tracking expenses during a trip. The expenses are converted into your home currency using an API, making it easier to manage your finances abroad."
+                        description= {t('projects.trafelfund')}
                         link="https://travel-fund.onrender.com"
                         frontend_technologies={[
                             { name: 'TypeScript', icon: <SiTypescript fontSize="48px" style={{ color: '#3178C6' }} /> },

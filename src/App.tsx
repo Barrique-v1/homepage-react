@@ -1,8 +1,8 @@
 import React from 'react';
 import { ThemeProvider, CssBaseline, Container } from '@mui/material';
 import Navbar from './components/Navbar/Navbar';
-import Home from './pages/Home/Home';
-import About from './pages/About/About';
+import Home from './pages/Home';
+import About from './pages/About';
 import Projects from './pages/Projects/Projects';
 import theme from './styles/theme';
 
