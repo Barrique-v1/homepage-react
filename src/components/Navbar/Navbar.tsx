@@ -16,6 +16,7 @@ const Navbar: React.FC = () => {
                 <Typography variant="h6" style={{ flexGrow: 1 }}>
                 </Typography>
                 <Button color="inherit" onClick={() => scrollToSection('home')}>Home</Button>
+                <Button color="inherit" onClick={() => scrollToSection('about')}>About</Button>
                 <Button color="inherit" onClick={() => scrollToSection('projects')}>Projects</Button>
             </Toolbar>
         </AppBar>

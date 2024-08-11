@@ -2,6 +2,7 @@ import React from 'react';
 import { ThemeProvider, CssBaseline, Container } from '@mui/material';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/Home';
+import About from './pages/About/About';
 import Projects from './pages/Projects/Projects';
 import theme from './styles/theme';
 
@@ -10,12 +11,15 @@ const App: React.FC = () => {
         <ThemeProvider theme={theme}>
             <CssBaseline />
             <Navbar />
-            <Container style={{ marginTop: '64px' }}>
+            <Container style={{marginTop: '64px'}}>
                 <section id="home">
-                    <Home />
+                    <Home/>
+                </section>
+                <section id="about">
+                    <About/>
                 </section>
                 <section id="projects">
-                    <Projects />
+                    <Projects/>
                 </section>
             </Container>
         </ThemeProvider>

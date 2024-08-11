@@ -1,17 +1,23 @@
 import React from 'react';
-import { Typography } from '@mui/material';
-import './About.css';
+import { Typography, Box } from '@mui/material';
 
 const About: React.FC = () => {
     return (
-        <div style={{ padding: '2rem 0' }}>
-            <Typography variant="h2" component="h1" gutterBottom>
+        <Box sx={{
+            height: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'start',
+            alignItems: 'center',
+            padding: 2
+        }}>
+            <Typography variant="caption" marginTop={2}>
+                Get To Know More
+            </Typography>
+            <Typography variant="h3" fontWeight={"bold"} marginBottom={5}>
                 About Me
             </Typography>
-            <Typography variant="body1">
-                This is the about page.
-            </Typography>
-        </div>
+        </Box>
     );
 };
 
