@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, Link } from '@mui/material';
-import Impressum from '../../pages/Impressum';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Footer: React.FC = () => {
     return (
@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
             }}
         >
             <Typography variant="body2" color="inherit">
-                <Link href="/impressum" color="inherit" sx={{ textDecoration: 'none' }}>
+                <Link component={RouterLink} to="/impressum" color="inherit" sx={{ textDecoration: 'none' }}>
                     Impressum
                 </Link>
                 {' | © 2024'}

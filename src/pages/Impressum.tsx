@@ -1,7 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Box, Typography, Breadcrumbs, Link } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
+
+
 
 const Impressum: React.FC = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <Box
             sx={{
@@ -15,7 +23,7 @@ const Impressum: React.FC = () => {
         >
             {/* Breadcrumbs for navigation */}
             <Breadcrumbs aria-label="breadcrumb" sx={{ marginBottom: 2 }}>
-                <Link underline="hover" color="inherit" href="/">
+                <Link underline="hover" color="inherit" component={RouterLink} to="/">
                     Home
                 </Link>
                 <Typography color="text.primary">Impressum</Typography>
