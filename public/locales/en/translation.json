@@ -20,7 +20,10 @@
     ]
   },
   "projects": {
+    "subtitle": "Browse My",
+    "title": "Projects",
     "trafelfund":"Travel Fund is a web app for tracking expenses during a trip. The expenses are converted into your home currency using an API, making it easier to manage your finances abroad.",
+    "brickbybrick": "In Development: Brick by Brick is a habit tracker that helps you establish routines permanently in your daily life.",
     "button": "Check It Out!"
   }
 }

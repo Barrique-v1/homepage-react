@@ -19,10 +19,10 @@ const Projects: React.FC = () => {
             }}
         >
             <Typography variant="caption">
-                Browse My Latest
+                {t('projects.subtitle')}
             </Typography>
             <Typography variant="h3" fontWeight="bold" marginBottom={5}>
-                Projects
+                {t('projects.title')}
             </Typography>
             <Grid container spacing={3}>
                 <Grid item xs={12} md={6}>
@@ -53,8 +53,8 @@ const Projects: React.FC = () => {
                 <Grid item xs={12} md={6}>
                     <ProjectCard
                         title="New Project"
-                        description="A new project is under development. Stay tuned for updates!"
-                        image="https://via.placeholder.com/500x250.png?text=Project+Coming+Soon"
+                        description={t('projects.brickbybrick')}
+                        image="https://via.placeholder.com/500x250.png?text=Brick+By+Brick+-+Coming+Soon"
                         button_text={t('projects.button')}
                         link="#"
                         frontend_technologies={[
@@ -67,8 +67,8 @@ const Projects: React.FC = () => {
                             { name: 'Technology', icon: <SiTypescript fontSize="48px" style={{ color: '#cccccc' }} /> },
                         ]}
                         repoLinks={{
-                            frontend: "#",
-                            backend: "#"
+                            frontend: "https://github.com/Barrique-v1",
+                            backend: "https://github.com/Barrique-v1"
                         }}
                     />
                 </Grid>
