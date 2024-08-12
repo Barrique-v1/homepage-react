@@ -52,9 +52,15 @@ const Navbar: React.FC = () => {
             navigate('/');
             setTimeout(() => {
                 scrollToSection(sectionId);
-            }, 100); // Delay to ensure navigation is complete
+            }, 100);
         }
     };
+
+    useEffect(() => {
+        if (location.pathname === '/') {
+            scrollToSection('home');
+        }
+    }, [location]);
 
     return (
         <AppBar position="fixed">
