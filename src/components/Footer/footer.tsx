@@ -21,7 +21,6 @@ const Footer: React.FC = () => {
                 <Link component={RouterLink} to="/impressum" color="inherit" sx={{ textDecoration: 'none' }}>
                     Impressum
                 </Link>
-                {' | © 2024'}
             </Typography>
         </Box>
     );
