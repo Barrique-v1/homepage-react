@@ -15,7 +15,7 @@ const App: React.FC = () => {
             <CssBaseline />
             <Router>
                 <Navbar />
-                <Container style={{ marginTop: '64px', flexGrow: 1 }}>
+                <Container>
                     <Routes>
                         <Route
                             path="/"

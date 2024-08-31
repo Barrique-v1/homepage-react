@@ -32,7 +32,10 @@ const Home: React.FC = () => {
                 alignItems: 'center',
             }}
         >
-            <Grid container spacing={10}>
+            <Grid container spacing={6}>
+                <Grid item xs={12} sm={6}>
+                    <ProfileImage src={Profilfoto2} alt="Profilfoto"/>
+                </Grid>
                 <Grid item xs={12} sm={6} sx={{
                     display: 'flex',
                     flexDirection: 'column',
@@ -59,9 +62,6 @@ const Home: React.FC = () => {
                             <LinkedInIcon sx={{color: '#0077b5', fontSize: 36}}/>
                         </IconButton>
                     </IconContainer>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <ProfileImage src={Profilfoto2} alt="Profilfoto"/>
                 </Grid>
             </Grid>
         </Box>

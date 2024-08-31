@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 import TravelFundImage from '../../assets/images/Travelfund_Logo.png';
 import { SiTypescript, SiVuedotjs, SiSpringboot, SiPostgresql } from 'react-icons/si';
 import { ReactComponent as JavaIcon } from '../../assets/icons/java.svg';
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const Projects: React.FC = () => {
     const { t } = useTranslation();
@@ -14,8 +14,10 @@ const Projects: React.FC = () => {
                 minHeight: '100vh',
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'center',
+                justifyContent: 'start',
                 alignItems: 'center',
+                marginTop: 5,
+                paddingX: 2
             }}
         >
             <Typography variant="caption">
@@ -29,7 +31,7 @@ const Projects: React.FC = () => {
                     <ProjectCard
                         title="Travel Fund"
                         image={TravelFundImage}
-                        description= {t('projects.trafelfund')}
+                        description={t('projects.trafelfund')}
                         button_text={t('projects.button')}
                         link="https://travel-fund.onrender.com"
                         frontend_technologies={[
@@ -49,7 +51,7 @@ const Projects: React.FC = () => {
                         }}
                     />
                 </Grid>
-                {/* Weitere Projektkarten können hier hinzugefügt werden */}
+                {/* Add more ProjectCards here */}
                 <Grid item xs={12} md={6}>
                     <ProjectCard
                         title="New Project"
