@@ -7,15 +7,15 @@
   "home": {
     "greeting": "Hallo, ich bin",
     "name": "Norman Peters",
-    "description": "ich studiere Wirtschaftsinformatik an der Hochschule für Technik und Wirtschaft in Berlin und habe eine Leidenschaft für Softwareentwicklung. Hier präsentiere ich einige meiner Projekte — viel Spaß beim Entdecken!"
+    "description": "ich studiere Wirtschaftsinformatik an der Hochschule für Technik und Wirtschaft in Berlin und habe ein starkes Interesse an der Softwareentwicklung. Hier präsentiere ich meine Projekte — viel Spaß beim Erkunden!"
   },
   "about": {
     "subtitle": "Erfahre Mehr",
     "title": "Über Mich",
     "paragraphs": [
-      "Ich studiere an der Hochschule für Technik und Wirtschaft, wo ich kürzlich mein drittes Semester abgeschlossen habe. Im kommenden Oktober werde ich mein viertes Semester beginnen. Während meines Studiums habe ich mir ein solides Fundament an Wissen in der Softwareentwicklung aufgebaut. Besonders schätze ich an meinem Studiengang die Kombination aus betriebswirtschaftlichem Know-how und technischen Fähigkeiten, die es mir ermöglicht, umfassende und praxisorientierte Lösungen zu entwickeln.",
-      "Neben meinem Studium habe ich durch persönliche Projekte wertvolle praktische Erfahrungen gesammelt und mein Wissen in verschiedenen Technologien vertieft. Diese Projekte haben es mir ermöglicht, kreative Problemlösungsansätze zu entwickeln und gleichzeitig meine Fähigkeiten in der Programmierung und im Projektmanagement zu stärken.",
-      "Eine Auswahl dieser Projekte und dabei verwendeten Technologien findest du im nächsten Abschnitt."
+      "Bevor ich mich für das Studium entschieden habe, war ich acht Jahre lang als Gebirgsjäger bei der Bundeswehr tätig. In dieser Zeit habe ich nicht nur körperliche und mentale Herausforderungen gemeistert, sondern auch wertvolle Fähigkeiten wie Disziplin, Teamarbeit und Führungsqualitäten erworben. Parallel zu meiner militärischen Laufbahn habe ich im Rahmen eines Fernstudiums bei der Studiengemeinschaft Darmstadt (SGD) mein Abitur nachgeholt. Diese zusätzliche Herausforderung hat mein Zeitmanagement erheblich verbessert und mir gezeigt, wie wichtig es ist, Eigeninitiative und Durchhaltevermögen zu entwickeln.",
+      "Das Studium an der Hochschule für Technik und Wirtschaft war ein bewusster Schritt, um neue Wege zu beschreiten. Dort habe ich kürzlich mein drittes Semester erfolgreich abgeschlossen und werde im kommenden Oktober mein viertes Semester beginnen. Mein Interesse an der Softwareentwicklung wurde durch das Studium nochmals vertieft, wodurch ich mir ein solides Fundament in diesem Bereich aufbauen konnte. Besonders schätze ich an meinem Studiengang die Kombination aus betriebswirtschaftlichem Know-how und technischen Fähigkeiten, die es mir ermöglicht, umfassende und praxisorientierte Lösungen zu entwickeln.",
+      "Für das kommende vierte Semester suche ich nun ein Pflichtpraktikum, um das Wissen aus dem Studium in die Praxis umzusetzen und meine Fähigkeiten weiter auszubauen. Ich freue mich darauf, meine theoretischen Kenntnisse in einem realen Arbeitsumfeld anzuwenden und wertvolle praktische Erfahrungen zu sammeln."
     ]
   },
   "projects": {

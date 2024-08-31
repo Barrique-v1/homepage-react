@@ -7,15 +7,15 @@
   "home": {
     "greeting": "Hello, I am",
     "name": "Norman Peters",
-    "description": "a Business Informatics student at the University of Applied Sciences in Berlin with a passion for software development. I'm excited to share some of my projects with you — please feel free to explore them!"
+    "description": "I am studying Business Informatics at the University of Applied Sciences in Berlin and have a strong interest in software development. Here, I present my projects – enjoy exploring them!"
   },
   "about": {
     "subtitle": "Get To Know More",
     "title": "About Me",
     "paragraphs": [
-      "I am studying at the University of Applied Sciences, where I recently completed my third semester. This coming October, I will begin my fourth semester. Throughout my studies, I have built a solid foundation of knowledge in software development. What I particularly appreciate about my program is the combination of business acumen and technical skills, which enables me to develop comprehensive and practical solutions.",
-      "In addition to my studies, I have gained valuable hands-on experience through personal projects and have deepened my knowledge in various technologies. These projects have allowed me to develop creative problem-solving approaches while also strengthening my skills in programming and project management.",
-      "A selection of these projects and the technologies used can be found in the next section."
+      "Before deciding to study, I served as a mountain soldier (Gebirgsjäger) in the German Armed Forces (Bundeswehr) for eight years. During this time, I not only overcame physical and mental challenges but also developed valuable skills such as discipline, teamwork, and leadership. In parallel with my military career, I completed my high school diploma through a distance learning program with the Studiengemeinschaft Darmstadt (SGD). This additional challenge significantly improved my time management skills and taught me the importance of initiative and endurance.",
+      "Studying at the University of Applied Sciences was a conscious step to explore new paths. I recently completed my third semester there and will begin my fourth semester this coming October. My interest in software development was further deepened through my studies, allowing me to build a solid foundation in this field. What I particularly appreciate about my program is the combination of business management knowledge and technical skills, which enables me to develop comprehensive and practical solutions.",
+      "For the upcoming fourth semester, I am now seeking a mandatory internship to apply the knowledge I have gained in my studies to a practical setting and to further develop my skills. I am excited about the opportunity to apply my theoretical knowledge in a real-world environment and to gain valuable practical experience."
     ]
   },
   "projects": {
