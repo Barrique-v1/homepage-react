@@ -13,15 +13,15 @@
     "subtitle": "Get To Know More",
     "title": "About Me",
     "paragraphs": [
-      "Before deciding to study, I served as a mountain soldier (Gebirgsjäger) in the German Armed Forces (Bundeswehr) for eight years. During this time, I not only overcame physical and mental challenges but also developed valuable skills such as discipline, teamwork, and leadership. In parallel with my military career, I completed my high school diploma through a distance learning program with the Studiengemeinschaft Darmstadt (SGD). This additional challenge significantly improved my time management skills and taught me the importance of initiative and endurance.",
-      "Studying at the University of Applied Sciences was a conscious step to explore new paths. I recently completed my third semester there and will begin my fourth semester this coming October. My interest in software development was further deepened through my studies, allowing me to build a solid foundation in this field. What I particularly appreciate about my program is the combination of business management knowledge and technical skills, which enables me to develop comprehensive and practical solutions.",
-      "For the upcoming fourth semester, I am now seeking a mandatory internship to apply the knowledge I have gained in my studies to a practical setting and to further develop my skills."
+      "Before I decided to study, I spent eight years as a mountain infantry soldier in the German Armed Forces. During this time, I not only overcame physical and mental challenges but also developed important skills like discipline, teamwork, and leadership. At the same time, I completed my high school diploma through a distance learning program with the Studiengemeinschaft Darmstadt (SGD). This extra challenge greatly improved my time management and taught me the importance of taking initiative and perseverance.",
+      "Starting my studies at the University of Applied Sciences was a conscious decision to move in a new direction. I recently finished my third semester successfully and will begin my fourth semester in October. My interest in software development has grown even more through my studies, and I have built a solid foundation in this field. I especially value the combination of business knowledge and technical skills in my program, which allows me to develop practical and comprehensive solutions.",
+      "For the upcoming fourth semester, I am looking for a mandatory internship to apply the knowledge I’ve gained from my studies in a real-world setting and to further improve my skills."
     ]
   },
   "projects": {
     "subtitle": "Browse My",
     "title": "Projects",
-    "trafelfund":"Travel Fund is a web app for tracking expenses during a trip. The expenses are converted into your home currency using an API, making it easier to manage your finances abroad.",
+    "trafelfund": "Travel Fund is a web app for tracking expenses during a trip. The expenses are converted into your home currency using an API, making it easier to manage your finances abroad.",
     "brickbybrick": "In Development: Brick by Brick is a habit tracker that helps you establish routines permanently in your daily life.",
     "button": "Check It Out!"
   }

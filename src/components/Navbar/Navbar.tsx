@@ -1,8 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { AppBar, Toolbar, Button, Switch, Box } from '@mui/material';
+import {
+    AppBar,
+    Toolbar,
+    Button,
+    IconButton,
+    Box,
+    Drawer,
+    List,
+    ListItem,
+    useMediaQuery,
+    Switch
+} from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import Flag from 'react-world-flags';
 import { useLocation, useNavigate } from 'react-router-dom';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import { Theme } from '@mui/material/styles'; // Import the Theme type
 import './Navbar.css';
 
 const LanguageSwitcher: React.FC = () => {
@@ -13,11 +27,15 @@ const LanguageSwitcher: React.FC = () => {
         setLanguage(i18n.language === 'en');
     }, [i18n.language]);
 
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleChange = async (event: React.ChangeEvent<HTMLInputElement>) => {
         const isEnglish = event.target.checked;
         const newLanguage = isEnglish ? 'en' : 'de';
-        i18n.changeLanguage(newLanguage);
-        setLanguage(isEnglish);
+        try {
+            await i18n.changeLanguage(newLanguage); // Handle the promise
+            setLanguage(isEnglish);
+        } catch (error) {
+            console.error("Failed to change language", error);
+        }
     };
 
     return (
@@ -37,6 +55,9 @@ const Navbar: React.FC = () => {
     const { t } = useTranslation();
     const location = useLocation();
     const navigate = useNavigate();
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const isXs = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
 
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
@@ -56,6 +77,15 @@ const Navbar: React.FC = () => {
         }
     };
 
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
+    const handleMenuClick = (sectionId: string) => {
+        toggleMenu();
+        handleNavigation(sectionId);
+    };
+
     useEffect(() => {
         if (location.pathname === '/') {
             scrollToSection('home');
@@ -68,9 +98,32 @@ const Navbar: React.FC = () => {
                 <Box sx={{ flexGrow: 1 }}>
                     <LanguageSwitcher />
                 </Box>
-                <Button color="inherit" onClick={() => handleNavigation('home')}>{t('nav.home')}</Button>
-                <Button color="inherit" onClick={() => handleNavigation('about')}>{t('nav.about')}</Button>
-                <Button color="inherit" onClick={() => handleNavigation('projects')}>{t('nav.projects')}</Button>
+                {isXs ? (
+                    <>
+                        <IconButton color="inherit" onClick={toggleMenu}>
+                            {menuOpen ? <CloseIcon /> : <MenuIcon />}
+                        </IconButton>
+                        <Drawer anchor="right" open={menuOpen} onClose={toggleMenu}>
+                            <List>
+                                <ListItem onClick={() => handleMenuClick('home')}>
+                                    <Button fullWidth>{t('nav.home')}</Button>
+                                </ListItem>
+                                <ListItem onClick={() => handleMenuClick('about')}>
+                                    <Button fullWidth>{t('nav.about')}</Button>
+                                </ListItem>
+                                <ListItem onClick={() => handleMenuClick('projects')}>
+                                    <Button fullWidth>{t('nav.projects')}</Button>
+                                </ListItem>
+                            </List>
+                        </Drawer>
+                    </>
+                ) : (
+                    <>
+                        <Button color="inherit" onClick={() => handleNavigation('home')}>{t('nav.home')}</Button>
+                        <Button color="inherit" onClick={() => handleNavigation('about')}>{t('nav.about')}</Button>
+                        <Button color="inherit" onClick={() => handleNavigation('projects')}>{t('nav.projects')}</Button>
+                    </>
+                )}
             </Toolbar>
         </AppBar>
     );

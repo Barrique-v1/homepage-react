@@ -7,15 +7,15 @@
   "home": {
     "greeting": "Hallo, ich bin",
     "name": "Norman Peters",
-    "description": "ich studiere Wirtschaftsinformatik an der Hochschule für Technik und Wirtschaft in Berlin und habe ein starkes Interesse an der Softwareentwicklung. Hier präsentiere ich meine Projekte — viel Spaß beim Erkunden!"
+    "description": "und studiere Wirtschaftsinformatik an der Hochschule für Technik und Wirtschaft in Berlin und habe ein starkes Interesse an der Softwareentwicklung. Hier präsentiere ich meine Projekte — viel Spaß beim Erkunden!"
   },
   "about": {
     "subtitle": "Erfahre Mehr",
     "title": "Über Mich",
     "paragraphs": [
-      "Bevor ich mich für das Studium entschieden habe, war ich acht Jahre lang als Gebirgsjäger bei der Bundeswehr tätig. In dieser Zeit habe ich nicht nur körperliche und mentale Herausforderungen gemeistert, sondern auch wertvolle Fähigkeiten wie Disziplin, Teamarbeit und Führungsqualitäten erworben. Parallel zu meiner militärischen Laufbahn habe ich im Rahmen eines Fernstudiums bei der Studiengemeinschaft Darmstadt (SGD) mein Abitur nachgeholt. Diese zusätzliche Herausforderung hat mein Zeitmanagement erheblich verbessert und mir gezeigt, wie wichtig es ist, Eigeninitiative und Durchhaltevermögen zu entwickeln.",
-      "Das Studium an der Hochschule für Technik und Wirtschaft war ein bewusster Schritt, um neue Wege zu beschreiten. Dort habe ich kürzlich mein drittes Semester erfolgreich abgeschlossen und werde im kommenden Oktober mein viertes Semester beginnen. Mein Interesse an der Softwareentwicklung wurde durch das Studium nochmals vertieft, wodurch ich mir ein solides Fundament in diesem Bereich aufbauen konnte. Besonders schätze ich an meinem Studiengang die Kombination aus betriebswirtschaftlichem Know-how und technischen Fähigkeiten, die es mir ermöglicht, umfassende und praxisorientierte Lösungen zu entwickeln.",
-      "Für das kommende vierte Semester suche ich nun ein Pflichtpraktikum, um das Wissen aus dem Studium in die Praxis umzusetzen und meine Fähigkeiten weiter auszubauen."
+      "Bevor ich mich für das Studium entschieden habe, war ich acht Jahre lang als Gebirgsjäger bei der Bundeswehr. In dieser Zeit habe ich nicht nur körperliche und mentale Herausforderungen gemeistert, sondern auch wichtige Fähigkeiten wie Disziplin, Teamarbeit und Führungsqualitäten entwickelt. Parallel zu meiner militärischen Laufbahn habe ich mein Abitur im Fernstudium bei der Studiengemeinschaft Darmstadt (SGD) nachgeholt. Diese zusätzliche Herausforderung hat mein Zeitmanagement enorm verbessert und mir gezeigt, wie entscheidend Eigeninitiative und Durchhaltevermögen sind.",
+      "Das Studium an der Hochschule für Technik und Wirtschaft war für mich ein bewusster Schritt in eine neue Richtung. Ich habe gerade mein drittes Semester erfolgreich abgeschlossen und starte im Oktober ins vierte. Mein Interesse an der Softwareentwicklung hat sich durch das Studium noch weiter verstärkt, und ich konnte mir ein solides Fundament in diesem Bereich aufbauen. Besonders schätze ich die Mischung aus betriebswirtschaftlichem Wissen und technischen Fähigkeiten, die es mir ermöglicht, praxisorientierte und ganzheitliche Lösungen zu entwickeln.",
+      "Für das kommende vierte Semester suche ich nun ein Pflichtpraktikum, um das im Studium erworbene Wissen in der Praxis anzuwenden und meine Fähigkeiten weiter auszubauen.\""
     ]
   },
   "projects": {
