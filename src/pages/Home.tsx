@@ -54,7 +54,7 @@ const Home: React.FC = () => {
                     </Typography>
 
                     <IconContainer>
-                        <IconButton href="https://github.com/Barrique-v1" target="_blank" aria-label="GitHub">
+                        <IconButton href="https://github.com/NormanPeters" target="_blank" aria-label="GitHub">
                             <GitHubIcon sx={{color: '#333', fontSize: 36}}/>
                         </IconButton>
                         <IconButton href="https://www.linkedin.com/in/peters-norman" target="_blank"
