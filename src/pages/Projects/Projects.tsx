@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Typography, Box } from '@mui/material';
 import ProjectCard from './ProjectCard';
-import TravelFundImage from '../../assets/images/Travelfund_Logo.png';
+import BucksBuddyLogo from '../../assets/images/BucksBuddy_Logo.png';
 import { SiTypescript, SiVuedotjs, SiSpringboot, SiPostgresql } from 'react-icons/si';
 import { ReactComponent as JavaIcon } from '../../assets/icons/java.svg';
 import { useTranslation } from "react-i18next";
@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
                 <Grid item xs={12} md={6}>
                     <ProjectCard
                         title="Travel Fund"
-                        image={TravelFundImage}
+                        image={BucksBuddyLogo}
                         description={t('projects.trafelfund')}
                         button_text={t('projects.button')}
                         link="https://travel-fund.onrender.com"
@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
                     <ProjectCard
                         title="New Project"
                         description={t('projects.brickbybrick')}
-                        image="https://via.placeholder.com/500x250.png?text=Brick+By+Brick+-+Coming+Soon"
+                        image="https://via.placeholder.com/1001x339.png?text=Brick+By+Brick+-+Coming+Soon"
                         button_text={t('projects.button')}
                         link="#"
                         frontend_technologies={[

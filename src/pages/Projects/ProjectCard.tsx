@@ -50,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <StyledCard>
         {/* Project Image */}
         <CardActionArea component="a" href={link} target="_blank">
-            <CardMedia component="img" alt={title} height="250" image={image}/>
+            <CardMedia component="img" alt={title} image={image}/>
         </CardActionArea>
 
         <CardContent>
