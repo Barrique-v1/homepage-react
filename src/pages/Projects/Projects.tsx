@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
                         image={BucksBuddyLogo}
                         description={t('projects.trafelfund')}
                         button_text={t('projects.button')}
-                        link="https://travel-fund.onrender.com"
+                        link="https://bucks-buddy.onrender.com"
                         frontend_technologies={[
                             { name: 'TypeScript', icon: <SiTypescript fontSize="48px" style={{ color: '#3178C6' }} /> },
                             { name: 'Vue.js', icon: <SiVuedotjs fontSize="48px" style={{ color: '#42b883' }} /> },
