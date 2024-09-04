@@ -47,31 +47,33 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                                                      database_technologies,
                                                      repoLinks
                                                  }) => (
-    <StyledCard>
+    <StyledCard style={{ display: 'flex', flexDirection: 'column' }}>
         {/* Project Image */}
-        <CardActionArea component="a" href={link} target="_blank">
-            <CardMedia component="img" alt={title} image={image}/>
+        <CardActionArea component="a" href={link} target="_blank" style={{ flex: '1' }}>
+            <CardMedia component="img" alt={title} image={image} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </CardActionArea>
 
-        <CardContent>
+        <CardContent style={{ display: 'flex', flexDirection: 'column', flex: '3', justifyContent: 'space-between' }}>
             {/* Project Description */}
-            <Typography variant="body1" gutterBottom justifyContent="center" alignItems="center" textAlign="center">
-                {description}
+            <div style={{ flex: '1', textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <Typography variant="body1" gutterBottom>
+                    {description}
+                </Typography>
                 <Button size="small" component="a" href={link} target="_blank">{button_text}</Button>
-            </Typography>
+            </div>
 
             {/* Technologie Titles */}
-            <Grid container spacing={2} justifyContent="center" alignItems="center" textAlign="center">
+            <Grid container spacing={2} justifyContent="center" alignItems="center" textAlign="center" style={{ flex: '1' }}>
                 <Grid item xs={4}>
                     <Typography variant="overline">Frontend</Typography>
                     <IconButton href={repoLinks.frontend} target="_blank" aria-label="GitHub Frontend Repo">
-                        <GitHubIcon style={{color: '#333', fontSize: 'large'}}/>
+                        <GitHubIcon style={{ color: '#333', fontSize: 'large' }} />
                     </IconButton>
                 </Grid>
                 <Grid item xs={4}>
                     <Typography variant="overline">Backend</Typography>
                     <IconButton href={repoLinks.backend} target="_blank" aria-label="GitHub Backend Repo">
-                        <GitHubIcon style={{color: '#333', fontSize: 'large'}}/>
+                        <GitHubIcon style={{ color: '#333', fontSize: 'large' }} />
                     </IconButton>
                 </Grid>
                 <Grid item xs={4}>
@@ -80,7 +82,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </Grid>
 
             {/* Technologie Icons */}
-            <Grid container spacing={2} justifyContent="center" alignItems="center">
+            <Grid container spacing={2} justifyContent="center" alignItems="center" style={{ flex: '1' }}>
                 <Grid item xs={4}>
                     <Grid container spacing={2} justifyContent="center" alignItems="center">
                         {frontend_technologies.map((tech, index) => (
@@ -123,6 +125,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </Grid>
         </CardContent>
     </StyledCard>
+
 );
 
 export default ProjectCard;
