@@ -7,7 +7,7 @@
   "home": {
     "greeting": "Hello, I am",
     "name": "Norman Peters",
-    "description": "I am studying Business Informatics at the University of Applied Sciences in Berlin and have a strong interest in software development. Here, I present my projects – enjoy exploring them!"
+    "description": "I am studying Business Informatics at the University of Applied Sciences in Berlin and software development is my passion. Here, I present my projects – enjoy exploring them!"
   },
   "about": {
     "subtitle": "Get To Know More",
@@ -21,7 +21,7 @@
     "subtitle": "Browse My",
     "title": "Projects",
     "trafelfund": "Bucks Buddy is a web app for tracking expenses during a trip. The expenses are converted into your home currency using an API, making it easier to manage your finances abroad.",
-    "digitalcookbook": "In Development",
+    "digitalcookbook": "In Development.",
     "button": "Check It Out!"
   }
 }
