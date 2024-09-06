@@ -13,16 +13,15 @@
     "subtitle": "Get To Know More",
     "title": "About Me",
     "paragraphs": [
-      "Before I decided to study, I spent eight years as a mountain infantry soldier in the German Armed Forces. During this time, I not only overcame physical and mental challenges but also developed important skills like discipline, teamwork, and leadership. At the same time, I completed my high school diploma through a distance learning program with the Studiengemeinschaft Darmstadt (SGD). This extra challenge greatly improved my time management and taught me the importance of taking initiative and perseverance.",
-      "Starting my studies at the University of Applied Sciences was a conscious decision to move in a new direction. I recently finished my third semester successfully and will begin my fourth semester in October. My interest in software development has grown even more through my studies, and I have built a solid foundation in this field. I especially value the combination of business knowledge and technical skills in my program, which allows me to develop practical and comprehensive solutions.",
-      "For the upcoming fourth semester, I am looking for a mandatory internship to apply the knowledge I’ve gained from my studies in a real-world setting and to further improve my skills."
+      "Before I decided to study, I spent eight years as a mountain soldier in the German Armed Forces. During this time, I not only overcame physical and mental challenges but also developed important skills like discipline, teamwork, and leadership. At the same time, I completed my high school diploma through a distance learning program with the Studiengemeinschaft Darmstadt (SGD). This extra challenge greatly improved my time management and taught me the importance of taking initiative and perseverance.",
+      "Starting my studies at the University of Applied Sciences was a conscious decision to move in a new direction. I recently finished my third semester successfully and will begin my fourth semester in October. My interest in software development has grown even more through my studies, and I have built a solid foundation in this field. I especially value the combination of business knowledge and technical skills in my program, which allows me to develop practical and comprehensive solutions."
     ]
   },
   "projects": {
     "subtitle": "Browse My",
     "title": "Projects",
     "trafelfund": "Bucks Buddy is a web app for tracking expenses during a trip. The expenses are converted into your home currency using an API, making it easier to manage your finances abroad.",
-    "brickbybrick": "In Development: Brick by Brick is a habit tracker that helps you establish routines permanently in your daily life.",
+    "digitalcookbook": "In Development",
     "button": "Check It Out!"
   }
 }

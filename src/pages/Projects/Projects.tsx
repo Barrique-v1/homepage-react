@@ -3,6 +3,7 @@ import { Grid, Typography, Box } from '@mui/material';
 import ProjectCard from './ProjectCard';
 import BucksBuddyLogo from '../../assets/images/BucksBuddy_Logo.png';
 import { SiTypescript, SiVuedotjs, SiSpringboot, SiPostgresql } from 'react-icons/si';
+import { FaGolang, FaVuejs } from "react-icons/fa6";
 import { ReactComponent as JavaIcon } from '../../assets/icons/java.svg';
 import { useTranslation } from "react-i18next";
 
@@ -55,18 +56,19 @@ const Projects: React.FC = () => {
                 <Grid item xs={12} md={6}>
                     <ProjectCard
                         title="New Project"
-                        description={t('projects.brickbybrick')}
-                        image="https://via.placeholder.com/1001x339.png?text=Brick+By+Brick+-+Coming+Soon"
+                        description={t('projects.digitalcookbook')}
+                        image="https://via.placeholder.com/1001x339.png?text=Digital+Cookbook+-+Coming+Soon"
                         button_text={t('projects.button')}
                         link="#"
                         frontend_technologies={[
-                            { name: 'Technology', icon: <SiTypescript fontSize="48px" style={{ color: '#cccccc' }} /> },
+                            { name: 'TypeScript', icon: <SiTypescript fontSize="48px" style={{ color: '#3178C6' }} /> },
+                            { name: 'Vue.js', icon: <SiVuedotjs fontSize="48px" style={{ color: '#42b883' }} /> },
                         ]}
                         backend_technologies={[
-                            { name: 'Technology', icon: <SiTypescript fontSize="48px" style={{ color: '#cccccc' }} /> },
+                            { name: 'Golang', icon: <FaGolang fontSize="48px" style={{ color: '#00ADD8' }} /> },
                         ]}
                         database_technologies={[
-                            { name: 'Technology', icon: <SiTypescript fontSize="48px" style={{ color: '#cccccc' }} /> },
+                            { name: 'PostgreSQL', icon: <SiPostgresql fontSize="48px" style={{ color: '#336791' }} /> },
                         ]}
                         repoLinks={{
                             frontend: "https://github.com/Barrique-v1",
