@@ -2,7 +2,7 @@ import React from 'react';
 import {Box, Grid, Typography} from '@mui/material';
 import ProjectCard from './ProjectCard';
 import BucksBuddyLogo from '../../assets/images/BucksBuddy_Logo.png';
-import {SiBootstrap, SiNuxtdotjs, SiPostgresql, SiSpringboot, SiTypescript, SiVuedotjs} from 'react-icons/si';
+import {SiBootstrap, SiNuxtdotjs, SiPostgresql, SiSpring, SiTypescript, SiVuedotjs} from 'react-icons/si';
 import {FaGolang} from "react-icons/fa6";
 import {ReactComponent as JavaIcon} from '../../assets/icons/java.svg';
 import {useTranslation} from "react-i18next";
@@ -42,7 +42,7 @@ const Projects: React.FC = () => {
                         ]}
                         backend_technologies={[
                             {name: 'Java', icon: <JavaIcon width={48} height={48}/>},
-                            {name: 'Spring Boot', icon: <SiSpringboot fontSize="48px" style={{color: '#6DB33F'}}/>},
+                            {name: 'Java Spring', icon: <SiSpring fontSize="48px" style={{color: '#6DB33F'}}/>},
                             {name: 'PostgreSQL', icon: <SiPostgresql fontSize="48px" style={{color: '#336791'}}/>},
 
                         ]}
