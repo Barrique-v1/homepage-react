@@ -3,7 +3,6 @@ import {Box, Grid, Typography} from '@mui/material';
 import ProjectCard from './ProjectCard';
 import BucksBuddyLogo from '../../assets/images/BucksBuddy_Logo.png';
 import {SiBootstrap, SiNuxtdotjs, SiPostgresql, SiSpring, SiTypescript, SiVuedotjs} from 'react-icons/si';
-import {FaGolang} from "react-icons/fa6";
 import {ReactComponent as JavaIcon} from '../../assets/icons/java.svg';
 import {useTranslation} from "react-i18next";
 
@@ -67,7 +66,8 @@ const Projects: React.FC = () => {
                             {name: 'Bootstrap', icon: <SiBootstrap fontSize="48px" style={{color: '#7952B3'}}/>},
                         ]}
                         backend_technologies={[
-                            {name: 'Golang', icon: <FaGolang fontSize="48px" style={{color: '#00ADD8'}}/>},
+                            {name: 'Java', icon: <JavaIcon width={48} height={48}/>},
+                            {name: 'Java Spring', icon: <SiSpring fontSize="48px" style={{color: '#6DB33F'}}/>},
                             {name: 'PostgreSQL', icon: <SiPostgresql fontSize="48px" style={{color: '#336791'}}/>},
                         ]}
                         repoLinks={{
