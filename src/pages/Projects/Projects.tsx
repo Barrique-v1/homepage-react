@@ -2,7 +2,7 @@ import React from 'react';
 import {Box, Grid, Typography} from '@mui/material';
 import ProjectCard from './ProjectCard';
 import BucksBuddyLogo from '../../assets/images/BucksBuddy_Logo.png';
-import {SiBootstrap, SiNuxtdotjs, SiPostgresql, SiSpring, SiTypescript, SiVuedotjs} from 'react-icons/si';
+import {SiBootstrap, SiNuxtdotjs, SiPostgresql, SiSpring, SiTypescript, SiVuedotjs, SiTailwindcss} from 'react-icons/si';
 import {ReactComponent as JavaIcon} from '../../assets/icons/java.svg';
 import {useTranslation} from "react-i18next";
 
@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
                             {name: 'TypeScript', icon: <SiTypescript fontSize="48px" style={{color: '#3178C6'}}/>},
                             {name: 'Vue.js', icon: <SiVuedotjs fontSize="48px" style={{color: '#42b883'}}/>},
                             {name: 'Nuxt.js', icon: <SiNuxtdotjs fontSize="48px" style={{color: '#00C58E'}}/>},
-                            {name: 'Bootstrap', icon: <SiBootstrap fontSize="48px" style={{color: '#7952B3'}}/>},
+                            {name: 'Tailwind CSS', icon: <SiTailwindcss fontSize="48px" style={{color: '#38B2AC'}}/>},
                         ]}
                         backend_technologies={[
                             {name: 'Java', icon: <JavaIcon width={48} height={48}/>},
