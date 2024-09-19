@@ -1,7 +1,8 @@
 import React from 'react';
 import {Box, Grid, Typography} from '@mui/material';
 import ProjectCard from './ProjectCard';
-import BucksBuddyLogo from '../../assets/images/BucksBuddy_Logo.png';
+import bucksbuddypng from '../../assets/images/bucksbuddypng.png';
+import recipevaultpng from '../../assets/images/recipevaultpng.png';
 import {SiBootstrap, SiNuxtdotjs, SiPostgresql, SiSpring, SiTypescript, SiVuedotjs, SiTailwindcss} from 'react-icons/si';
 import {ReactComponent as JavaIcon} from '../../assets/icons/java.svg';
 import {useTranslation} from "react-i18next";
@@ -30,7 +31,7 @@ const Projects: React.FC = () => {
                 <Grid item xs={12} md={6}>
                     <ProjectCard
                         title="Bucks Buddy"
-                        image={BucksBuddyLogo}
+                        image={bucksbuddypng}
                         description={t('projects.trafelfund')}
                         button_text={t('projects.button')}
                         link="https://bucks-buddy.onrender.com"
@@ -56,7 +57,7 @@ const Projects: React.FC = () => {
                     <ProjectCard
                         title="Recipe Vault"
                         description={t('projects.digitalcookbook')}
-                        image="https://via.placeholder.com/1001x339.png?text=Recipe+Vault+-+Coming+Soon"
+                        image={recipevaultpng}
                         button_text=''
                         link=''
                         frontend_technologies={[

@@ -45,11 +45,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                                                      backend_technologies,
                                                      repoLinks
                                                  }) => (
-    <StyledCard style={{display: 'flex', flexDirection: 'column'}}>
+    <StyledCard style={{display: 'flex', flexDirection: 'column', padding: '16px'}}>
         {/* Project Image */}
         <CardActionArea component="a" href={link} target="_blank" style={{flex: '1'}}>
             <CardMedia component="img" alt={title} image={image}
-                       style={{width: '100%', height: '100%', objectFit: 'cover'}}/>
+                       style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '4px'}}/>
         </CardActionArea>
 
         <CardContent style={{display: 'flex', flexDirection: 'column', flex: '3', justifyContent: 'space-between'}}>
