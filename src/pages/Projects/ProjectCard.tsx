@@ -30,7 +30,11 @@ type ProjectCardProps = {
 };
 
 const StyledCard = styled(Card)(({theme}) => ({
-    maxWidth: 550,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
     height: '100%',
     boxShadow: theme.shadows[3],
 }));
@@ -61,7 +65,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'start',
-                marginBottom: 20
             }}>
                 <Typography variant="body1" gutterBottom>
                     {description}
@@ -93,7 +96,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         {frontend_technologies.map((tech, index) => (
                             <Grid item key={index}>
                                 <Tooltip title={tech.name}>
-                                    <IconButton aria-label={tech.name}>
+                                    <IconButton aria-label={tech.name} style={{fontSize: '40px'}}>
                                         {tech.icon}
                                     </IconButton>
                                 </Tooltip>
@@ -106,7 +109,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                         {backend_technologies.map((tech, index) => (
                             <Grid item key={index}>
                                 <Tooltip title={tech.name}>
-                                    <IconButton aria-label={tech.name}>
+                                    <IconButton aria-label={tech.name} style={{fontSize: '40px'}}>
                                         {tech.icon}
                                     </IconButton>
                                 </Tooltip>

@@ -35,17 +35,16 @@ const Projects: React.FC = () => {
                         description={t('projects.trafelfund')}
                         button_text={t('projects.button')}
                         link="https://bucks-buddy.onrender.com"
-                        frontend_technologies={[
-                            {name: 'TypeScript', icon: <SiTypescript fontSize="48px" style={{color: '#3178C6'}}/>},
-                            {name: 'Vue.js', icon: <SiVuedotjs fontSize="48px" style={{color: '#42b883'}}/>},
-                            {name: 'Bootstrap', icon: <SiBootstrap fontSize="48px" style={{color: '#7952B3'}}/>},
-                        ]}
-                        backend_technologies={[
-                            {name: 'Java', icon: <JavaIcon width={48} height={48}/>},
-                            {name: 'Java Spring', icon: <SiSpring fontSize="48px" style={{color: '#6DB33F'}}/>},
-                            {name: 'PostgreSQL', icon: <SiPostgresql fontSize="48px" style={{color: '#336791'}}/>},
-
-                        ]}
+frontend_technologies={[
+    {name: 'TypeScript', icon: <SiTypescript style={{color: '#3178C6'}}/>},
+    {name: 'Vue.js', icon: <SiVuedotjs style={{color: '#42b883'}}/>},
+    {name: 'Bootstrap', icon: <SiBootstrap style={{color: '#7952B3'}}/>},
+]}
+backend_technologies={[
+    {name: 'Java', icon: <JavaIcon width={40} height={40}/>},
+    {name: 'Java Spring', icon: <SiSpring style={{color: '#6DB33F'}}/>},
+    {name: 'PostgreSQL', icon: <SiPostgresql style={{color: '#336791'}}/>},
+]}
                         repoLinks={{
                             frontend: "https://github.com/Barrique-v1/Travel_Fund_Frontend",
                             backend: "https://github.com/Barrique-v1/Travel_Fund_Backend"
@@ -59,21 +58,21 @@ const Projects: React.FC = () => {
                         description={t('projects.digitalcookbook')}
                         image={recipevaultpng}
                         button_text=''
-                        link=''
-                        frontend_technologies={[
-                            {name: 'TypeScript', icon: <SiTypescript fontSize="48px" style={{color: '#3178C6'}}/>},
-                            {name: 'Vue.js', icon: <SiVuedotjs fontSize="48px" style={{color: '#42b883'}}/>},
-                            {name: 'Nuxt.js', icon: <SiNuxtdotjs fontSize="48px" style={{color: '#00C58E'}}/>},
-                            {name: 'Tailwind CSS', icon: <SiTailwindcss fontSize="48px" style={{color: '#38B2AC'}}/>},
-                        ]}
-                        backend_technologies={[
-                            {name: 'Java', icon: <JavaIcon width={48} height={48}/>},
-                            {name: 'Java Spring', icon: <SiSpring fontSize="48px" style={{color: '#6DB33F'}}/>},
-                            {name: 'PostgreSQL', icon: <SiPostgresql fontSize="48px" style={{color: '#336791'}}/>},
-                        ]}
+                        link='https://github.com/NormanPeters/recipevault-backend'
+frontend_technologies={[
+    {name: 'TypeScript', icon: <SiTypescript style={{color: '#3178C6'}}/>},
+    {name: 'Vue.js', icon: <SiVuedotjs style={{color: '#42b883'}}/>},
+    {name: 'Nuxt.js', icon: <SiNuxtdotjs style={{color: '#00C58E'}}/>},
+    {name: 'Tailwind CSS', icon: <SiTailwindcss style={{color: '#38B2AC'}}/>},
+]}
+backend_technologies={[
+    {name: 'Java', icon: <JavaIcon width={40} height={40}/>},
+    {name: 'Java Spring', icon: <SiSpring style={{color: '#6DB33F'}}/>},
+    {name: 'PostgreSQL', icon: <SiPostgresql style={{color: '#336791'}}/>},
+]}
                         repoLinks={{
-                            frontend: '',
-                            backend: ''
+                            frontend: 'https://github.com/NormanPeters/recipevault-frontend',
+                            backend: 'https://github.com/NormanPeters/recipevault-backend'
                         }}
                     />
                 </Grid>
